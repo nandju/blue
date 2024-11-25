@@ -1,0 +1,146 @@
+d_blue : 0xFF367CBE → #367CBE
+Dégradé de fond :
+Première couleur : 0xFF367CBE → #367CBE
+Deuxième couleur : 0xFF8FBC8F → #8FBC8F
+Icônes et texte : Colors.white → #FFFFFF
+Opacité du blanc (couleur de fond des icônes et boutons) : Colors.white.withOpacity(0.3) → #FFFFFF (à 30% d'opacité)
+Texte grisé dans les descriptions : Colors.grey[600] → #757575
+
+
+<div class="bg-gradient-to-r from-d_blue to-light_green p-8 text-white">
+  <!-- Contenu ici -->
+  Dégradé de fond
+</div>
+background: linear-gradient(to right, #367CBE, #8FBC8F);
+
+Valeurs en RGB
+Voici les valeurs RGB des couleurs :
+
+#367CBE : rgb(54, 124, 190)
+#8FBC8F : rgb(143, 188, 143)
+
+<header class="header flex flex-row bg-[#0E6FBC] justify-around fixed top-0 w-full z-10">
+    <div class="logo w-20">
+
+        <header class="header flex flex-row bg-[#0E6FBC] justify-around fixed w-full">
+            <div class="logo w-20">
+                <img src="data:image/png;base64,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" alt="">
+            </div>
+            
+            <!-- Bouton menu hamburger pour mobile -->
+            <button class="mobile-menu-button md:hidden flex items-center px-3">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        
+            <!-- Navigation principale -->
+            <nav class="navbar hidden md:flex justify-center gap-10 mx-0 my-auto">
+                <a href="#home" class="text-white hover:text-gray-200">Home</a>
+                <a href="#services" class="text-white hover:text-gray-200">Services</a>
+                <a href="#team" class="text-white hover:text-gray-200">Team</a>
+                <a href="#news" class="text-white hover:text-gray-200">News</a>
+                <a href="#contactus" class="text-white hover:text-gray-200">Contact us</a>
+            </nav>
+        
+            <!-- Menu mobile -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-[#0E6FBC] md:hidden">
+                <a href="#home" class="block py-2 px-4 text-white hover:bg-blue-600">Home</a>
+                <a href="#services" class="block py-2 px-4 text-white hover:bg-blue-600">Services</a>
+                <a href="#team" class="block py-2 px-4 text-white hover:bg-blue-600">Team</a>
+                <a href="#news" class="block py-2 px-4 text-white hover:bg-blue-600">News</a>
+                <a href="#contactus" class="block py-2 px-4 text-white hover:bg-blue-600">Contact us</a>
+            </div>
+        
+            <button class="button1 hidden md:block bg-white rounded-3xl text-[#0E6FBC] p-4 m-3">Login</button>
+        </header>
+        
+        <!-- JavaScript pour le menu mobile -->
+        <script>
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+        
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+
+<section class="hero bg-cover bg-center bg-no-repeat h-screen flex flex-col items-center justify-center text-white" style="background-image: url('URL_DE_VOTRE_IMAGE');">
+    <div class="text1 text-4xl font-bold mb-4">hello students</div>
+    <div class="text2 text-3xl font-semibold mb-4">WELCOME EDUCATION</div>
+    <div class="text3 text-lg text-center mb-8 px-4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi dicta reprehenderit praesentium neque voluptas,<br>
+        rem odio est mollitia natus nam. Soluta vitae neque perspiciatis adipisci<br>
+        voluptates sunt porro tenetur molestias.
+    </div>
+    <button class="button1 bg-blue-500 text-white rounded-full px-6 py-3 hover:bg-blue-600 transition">join us now</button>
+</section>
+
+<div class="truncate w-48">
+    Ceci est un texte très long qui sera tronqué avec des points de suspension si nécessaire.
+</div>
+
+<div class="line-clamp-3 w-48">
+    Ceci est un texte très long qui sera tronqué après trois lignes avec des points de suspension.
+</div>
+
+
+<section class="flex justify-center items-center bg-gray-900 py-10 px-4">
+    <fieldset class="bg-white w-full max-w-4xl p-6 rounded-lg shadow-lg">
+      <!-- Titre -->
+      <legend class="text-2xl font-bold text-gray-800 mb-4">LET'S GET IN TOUCH</legend>
+      
+      <!-- Ligne de séparation -->
+      <hr class="border-t border-gray-300 mb-6">
+  
+      <!-- Champs du formulaire -->
+      <form class="space-y-6">
+        <!-- Ligne supérieure : Nom, Email, Sujet -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Nom -->
+          <input
+            type="text"
+            name="name"
+            placeholder="YOUR NAME...*"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none placeholder-gray-400"
+          />
+          <!-- Email -->
+          <input
+            type="email"
+            name="email"
+            placeholder="YOUR EMAIL...*"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none placeholder-gray-400"
+          />
+          <!-- Sujet -->
+          <input
+            type="text"
+            name="subject"
+            placeholder="SUBJECT...*"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none placeholder-gray-400"
+          />
+        </div>
+  
+        <!-- Champ de message -->
+        <textarea
+          name="message"
+          placeholder="YOUR MESSAGE..."
+          required
+          class="w-full h-32 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none placeholder-gray-400 resize-none"
+        ></textarea>
+  
+        <!-- Bouton d'envoi -->
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg shadow-lg hover:bg-red-700 focus:ring-4 focus:ring-red-500"
+          >
+            SEND MESSAGE NOW
+          </button>
+        </div>
+      </form>
+    </fieldset>
+  </section>
+  bg-[#0E6FBC] rounded-3xl text-white py-2 px-5 w-full

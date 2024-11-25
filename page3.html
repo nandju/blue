@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUE - Connexion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-poppins">
+    <div></div>
+    <div class="flex h-screen">
+        <!-- Partie gauche avec l'image -->
+        <div class="w-1/2 relative bg-black rounded-3xl m-4 overflow-hidden">
+            
+            
+            <div class="relative w-full h-full">
+                <img src="images/IMG_1574.JPG" alt="Paysage" class="w-full h-full object-cover">
+
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>  
+            
+            <div class="absolute top-6 left-6 flex items-center justify-between w-[90%]">
+                <div class="text-white">News of the day</div>
+                <div class="flex gap-4">
+                    <button class="px-4 py-1 text-white border border-white/20 rounded-full text-sm">Sign Up</button>
+                    <button class="px-4 py-1 text-white border border-white/20 rounded-full text-sm">Learn more</button>
+                </div>
+            </div>
+            
+            <div class="absolute bottom-6 left-6 flex items-center gap-4">
+                <img src="images/blue.png" alt="Profile" class="w-10 h-10 rounded-full">
+                <div class="text-white">
+                    <div class="font-medium text-xl">Daniel BLETCHI </div>
+                    <div class="text-sm text-white/70 text-lg">Communication Department</div>
+                </div>
+                <div class="flex gap-2 ml-auto mr-6">
+                    <button class="w-8 h-8 bg-white/40 rounded-full flex items-center justify-center">←</button>
+                    <button class="w-8 h-8 bg-white/40 rounded-full flex items-center justify-center">→</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Partie droite avec le formulaire -->
+        <div class="w-1/2 flex items-center justify-center">
+            <div class="w-[400px]">
+                <div class="flex justify-between items-center mb-8">
+                    <div class="font-extrabold text-2xl text-[#0E6FBC] text-shadow-4xl">BLUE</div>
+                    <select class="border rounded-3xl px-2 py-1">
+                        <option>EN</option>
+                        <option>FR</option>
+                    </select>
+                </div>
+
+                <h1 class="text-3xl font-bold mb-2 text-[#0E6FBC]">Hello !</h1>
+                <p class=" mb-8 text-blue-600">Welcome to the Executive Office</p>
+
+                <form class="space-y-4">
+                    <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    <input type="password" placeholder="Password" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    <div class="text-right">
+                        <a href="#" class="text-blue-600 text-sm">Forgot password?</a>
+                    </div>
+                    
+                    <button class="w-full p-3 border rounded-lg flex items-center justify-center gap-2 mb-4">
+                        <img src="images/icons8-google-48-removebg-preview.png" alt="Google" class="w-5 h-5">
+                        Login with Google
+                    </button>
+                    
+                    <button class="w-full p-3 bg-blue-600 text-white rounded-lg">Login</button>
+                </form>
+
+                <p class="text-center mt-4 text-sm text-gray-600">
+                    Don't have an account? <a href="#" class="text-blue-600">Sign up</a>
+                </p>
+
+                <div class="flex justify-center gap-4 mt-8">
+                    <!-- Facebook -->
+                    <a href="https://facebook.com" class="text-gray-400" target="_blank" aria-label="Facebook">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com" class="text-gray-400" target="_blank" aria-label="LinkedIn">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 20h-3.5v-11h3.5v11zm-1.75-12.41c-1.12 0-2.03-.91-2.03-2.03 0-1.12.91-2.03 2.03-2.03 1.12 0 2.03.91 2.03 2.03s-.91 2.03-2.03 2.03zm14.25 12.41h-3.5v-5.58c0-1.33-.03-3.03-1.85-3.03-1.85 0-2.14 1.44-2.14 2.93v5.68h-3.5v-11h3.36v1.5h.05c.47-.89 1.62-1.83 3.33-1.83 3.56 0 4.22 2.34 4.22 5.38v6.95z" />
+                        </svg>
+                    </a>
+                
+                    <!-- WhatsApp -->
+                    <a href="https://whatsapp.com" class="text-gray-400" target="_blank" aria-label="WhatsApp">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16.989 14.459c-.224-.112-1.322-.652-1.529-.73-.205-.075-.354-.112-.503.113-.149.224-.577.73-.708.88-.13.15-.263.168-.487.056-.224-.113-.944-.347-1.799-1.107-.665-.59-1.113-1.322-1.243-1.546-.13-.224-.013-.345.1-.458.102-.101.224-.263.336-.394.112-.13.15-.224.224-.374.074-.149.037-.28-.018-.394-.056-.112-.503-1.214-.698-1.681-.182-.433-.366-.373-.503-.373-.13-.007-.281-.009-.432-.009-.149 0-.393.056-.6.28-.205.225-.789.773-.789 1.882 0 1.109.808 2.182.92 2.332.112.149 1.59 2.426 3.865 3.401.54.232.96.37 1.287.474.54.172 1.032.148 1.423.09.433-.065 1.322-.539 1.508-1.057.186-.518.186-.964.13-1.057-.056-.093-.205-.149-.43-.261zm-4.989-14.459c-6.628 0-12 5.373-12 12 0 2.105.549 4.077 1.506 5.789l-1.603 5.845 5.963-1.567c1.665.914 3.576 1.433 5.634 1.433 6.627 0 12-5.373 12-12s-5.373-12-12-12zm0 21.818c-1.713 0-3.303-.467-4.675-1.277l-.334-.198-3.541.931.949-3.451-.217-.344c-.923-1.465-1.468-3.175-1.468-5.02 0-5.439 4.419-9.857 9.856-9.857s9.856 4.419 9.856 9.857-4.419 9.857-9.856 9.857z" />
+                        </svg>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div></div>
+
+</body>
+</html>

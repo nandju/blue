@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="body font-poppins ">
+    <header class="header flex flex-row bg-[#0E6FBC] justify-around fixed w-full z-10">
+        <div class="logo w-20"><img src="data:image/png;base64,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" alt=""></div>
+        <nav class="navbar hidden lg:flex justify-center gap-10 mx-0 my-auto">
+            <a href="#home" class="text-white">Home</a>
+            <a href="#services" class="text-white">Services</a>
+            <a href="#team" class="text-white">Team</a>
+            <a href="#news" class="text-white">News</a>
+            <a href="#satistic" class="text-white">Statistics</a>
+            <a href="#contactus" class="text-white">Contact us</a>
+        </nav>
+        <button class="button1 bg-white rounded-3xl text-[#0E6FBC] p-4 m-3">Login</button>
+    </header>
+    <main class="relative bg-no-repeat bg-cover bg-center h-full w-full z-0" style="background-image: url(images/900353_995.jpg);">
+        <section class="hero pt-[150px] md:pl-10 px-auto py-0 flex flex-col text-start gap-1 md:gap-4 lg:gap-6 items-start relative bg-no-repeat bg-cover h-[650px] w-full bg-center z-0" 
+        style="background-image: url('https://scontent.fabj7-1.fna.fbcdn.net/v/t39.30808-6/465122667_545203964895810_5670941826404524083_n.jpg?stp=dst-jpg_p180x540&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=dRK8aZ_iqHcQ7kNvgFODMUH&_nc_zt=23&_nc_ht=scontent.fabj7-1.fna&_nc_gid=AMqUROD9Y5QTLz1FyruTkV6&oh=00_AYDp5AXG-h0PyEp8gWouri0fjtITjyRcOiD3HBQ-U6PJsA&oe=6740EC54');">
+        <!-- <section class="hero pt-[150px] md:pl-10 px-auto py-0 flex flex-col text-start gap-1 md:gap-4 lg:gap-6 items-start relative bg-no-repeat bg-cover h-[650px] w-full bg-center z-0" style="background-image: url('images/IMG_1574.JPG');"> -->
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 from-green-500 opacity-60"></div>
+            <div class="text1 relative text-5xl text-white font-bold z-1">BLUE WORLD ?</div>
+            <div class="text2 relative text-3xl text-white font-semibold italic z-1">It is possible!</div>
+            <div class="text3 relative text-xl text-white z-1">
+                WELCOME TO OUR BLUE WORLD BIENVENUE DANS NOTRE MONDE BLEU <br>
+                ANYTHING WE DO, WE DO IT FOR THE PLANET!
+            </div>
+            <button class="button1 relative bg-transparent border-4 border-white px-3 rounded-3xl text-white p-4 m3 z-1">join us now</button>
+        </section>
+        <section class="Services relative flex flex-row justify-around w-full h-full gap-1 top-[-150px]">
+            <div class="services-tools border flex flex-col justify-center bg-white rounded-3xl shadow-lg text-center items-center h-auto w-64 items-start px-auto py-8 m-4 hover:scale-110 cursor-pointer">
+                <div class="pictures-services h-10"><img src="images/icons8-leaf-24-removebg-preview.png" alt=""></div>
+                <div class="title-services text-[#0E6FBC] font-semibold text-2xl">Environment</div>
+                <div class="substile-services text-[#0E6FBC] text-lg">All our actions are focused on protecting the environment...</div>
+            </div>
+            <div class="services-tools border flex flex-col justify-center items-center bg-white rounded-3xl shadow-lg text-center h-auto w-64 items-start p-8 m-4 hover:scale-110 cursor-pointer">
+                <div class="pictures-services h-10"><img src="images/icons8-student-male-24-removebg-preview.png" alt=""></div>
+                <div class="title-services text-black font-semibold text-2xl">Education</div>
+                <div class="substile-services text-black text-lg">In education we have a program called Blue school...</div>
+            </div>
+            <div class="services-tools border flex flex-col justify-center bg-white rounded-3xl shadow-lg text-center h-auto w-64 items-center p-8 m-4 hover:scale-110 cursor-pointer">
+                <div class="pictures-services h-10"><img src="images/icons8-heart-with-pulse-24-removebg-preview.png" alt=""></div>
+                <div class="title-services text-[#0E6FBC] font-semibold text-2xl">Public Health</div>
+                <div class="substile-services text-[#0E6FBC] text-lg">Public Health
+                    Raising awareness of the dangers associated with the consumption of microplastics due to plastic pollution of the sea.</div>
+            </div>
+        </section>
+        <section class="team flex flex-col justify-center">
+            <div class="title text-5xl text-center font-extrabold">TEAM</div>
+            <div class="line flex justify-center"><hr class="border-t border-black w-3/4 my-4"></div>
+            <div class="profil flex flex-row justify-around">
+                <div class="profil-left bg-white flex flex-col h-3/4 gap-4 p-6 justify-start rounded-3xl shadow-lg">
+                    <p class="text-xl font-bold">Different Teams</p>
+                    <hr class="border-t border-black-opacity-50 w-32 my-4">
+                    <p class="text-lg font-base">President</p>
+                    <p class="text-lg font-base">Vice President</p>
+                    <p class="text-lg font-base">Secretary General</p>
+                    <p class="text-lg font-base">Treasurer</p>
+                    <hr class="border-t border-black-opacity-50 w-32 my-4">
+                    <button class="button1 bg-[#0E6FBC] rounded-3xl text-white py-2 px-5 w-full">All Teams</button>
+                </div>
+                <div class="profil-right grid grid-cols-2 grid-rows-2 gap-8 p-6">
+                    <div class="card-profil flex flex-col gap-4 bg-[#388B9F] rounded-3xl shadow-lg overflow-hidden text-center text-xl font-bold hover:scale-110">
+                        <div class="shrink-0"><img class="w-64 h-64" src="https://bluemakers.net/wp-content/uploads/2023/03/My-project-1-1.png" alt="" title="jesus aka"></div>
+                        <div class="card-name">JESUS AKA</div>
+                    </div>
+                    <div class="card-profil flex flex-col gap-4 bg-[#8F6037] rounded-3xl shadow-lg overflow-hidden text-center text-xl font-bold hover:scale-110">
+                        <div class="shrink-0"><img class="w-64 h-64" src="https://bluemakers.net/wp-content/uploads/2023/03/My-project-1.png" alt="" title="n'dri"></div>
+                        <div class="card-name">N'DRI</div>
+                    </div>
+                    <div class="card-profil flex flex-col gap-4 bg-[#5D3D3C] rounded-3xl shadow-lg overflow-hidden text-center text-xl font-bold hover:scale-110">
+                        <div class="shrink-0"><img class="w-64 h-64" src="https://bluemakers.net/wp-content/uploads/2023/03/My-project-1-2.png" alt="" title="jean m yeboue"></div>
+                        <div class="card-name">JEAN M YEBOUE</div>
+                    </div>
+                    <div class="card-profil flex flex-col gap-4 bg-[#5D3D3C] rounded-3xl shadow-lg overflow-hidden text-center text-xl font-bold hover:scale-110">
+                        <div class="shrink-0"><img class="w-64 h-64" src="https://bluemakers.net/wp-content/uploads/2023/03/My-project-1-3.png" alt="" title="anah toure"></div>
+                        <div class="card-name">ANAH TOURE</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="title text-5xl text-center font-extrabold">NEWS</div>
+            <div class="flex justify-center"><hr class="border-t border-black w-3/4 my-4"></div>
+            <div class="news-card flex flex-row gap-10 justify-around p-5">
+                <div class=" mx-auto bg-white rounded-xl shadow-md overflow-hidden w-1/2">
+                    <div class="flex flex-col">
+                      <div class="shrink-0">
+                        <img class="h-full w-full object-cover" src="https://bluemakers.net/wp-content/uploads/2024/06/448204633_449596811123193_5568259101842765786_n-e1718102640448.jpg" alt="">
+                      </div>
+                      <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-green-700 font-semibold">Non classé . 11 juin 2024</div>
+                        <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">World Oceans Day in Liberia</a>
+                        <p class="mt-2 text-slate-500 line-clamp-6">Last year, we welcomed volunteers from Liberia and worked with them on several projects.
+                            After their wonderful experience in Côte d’Ivoire, they decided to impact their community as well. On June 8, World Oceans Day, they visited communities living by the sea to raise awareness about good practices to adopt to protect our environment from plastic pollution.
+                            We are proud of their commitment and encourage each of us to adopt the right actions.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class=" mx-auto bg-white rounded-xl shadow-md overflow-hidden w-1/2">
+                    <div class="flex flex-col">
+                      <div class="shrink-0">
+                        <img class="h-full w-full object-cover" src="https://bluemakers.net/wp-content/uploads/2023/03/289997281_138751242103041_6257588539810633151_n.jpeg" alt="">
+                      </div>
+                      <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-green-700 font-semibold">Non classé . 1 Comment . 22 juillet 2022</div>
+                        <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">TREE PLANTING</a>
+                        <p class="mt-2 text-slate-500 line-clamp-6">WE MUST TAKE ADVANTAGE OF THIS RAINY SEASON TO HAVE AN ENVIRONMENTAL IMPACT.
+
+                            Hello dear Blue Makers, we all know that we are currently in the rainy season and this is the best time to plant trees.
+                            
+                            So, we have initiated the operation one BLUE Maker one tree. This very special activity aims to create a link between each of us and the environment.
+                            
+                            It consists of planting a tree🌳 of your choice (in front of your house or in your city.) And then making a publication on Facebook, LinkedIn or Instagram in which he/she will say his/her attachment and the choice of this tree in particular.
+                            
+                            For example, the one who decides to plant a mango tree, will have to explain to us why he/she chose this tree personally and his/her attachment to it.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class=" mx-auto bg-white rounded-xl shadow-md overflow-hidden w-1/2">
+                    <div class="flex flex-col">
+                      <div class="shrink-0">
+                        <img class="h-full w-full object-cover" src="https://bluemakers.net/wp-content/uploads/2023/03/282444217_130372139607618_4758214152259572713_n.jpeg" alt="">
+                      </div>
+                      <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-green-700 font-semibold">Blog . 1 Comment . 28 mai 2022</div>
+                        <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">RECYCL’DAY</a>
+                        <p class="mt-2 text-slate-500 line-clamp-6">As part of its second activity called "RECYCL'DAY", the Blue Makers team organized this Saturday, May 28, 2022 at the Félix Houphouet-Boigny University to collect and recycle plastic waste.
+
+                            We made art objects from the collected plastic waste.
+                            
+                            Fighting pollution while giving a second life to our waste was the mission of the day.
+                            
+                            We would like to thank the German cooperation #GIZ, the German Embassy Abidjan and Exclusiv in who were kind enough to take part in the activity, a sign of their involvement in the implementation of the sustainable development goals.
+                            
+                            We also thank Mrs. Edith Brou for her advice and support which helped to hold this activity.
+                            
+                            So, are you ready for the next activity?
+                            
+                            #imabluemaker #environment
+                            
+                            #plasticpollution</p>
+                      </div>
+                    </div>
+                </div>
+                <div class=" mx-auto bg-white rounded-xl shadow-md overflow-hidden w-1/2">
+                    <div class="flex flex-col">
+                      <div class="shrink-0">
+                        <img class="h-full w-full object-cover" src="https://bluemakers.net/wp-content/uploads/2023/03/278365508_117496157561883_2198769180948113939_n.jpeg" alt="">
+                      </div>
+                      <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-green-700 font-semibold">Blog . 1 Comment . 9 avril 2022</div>
+                        <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Let’s go for the environment !</a>
+                        <p class="mt-2 text-slate-500 line-clamp-6">let’s go for the environment!
+
+                            This Saturday, April 9, marked the beginning of Blue’s activities.
+                            
+                            Together, and committed, we brought a boost to the beautiful town of Cocody.
+                            
+                            As an organization fighting for the protection of the environment, we are more than delighted to work through our commitment to the realization of our program of collecting plastic waste from our streets.
+                            
+                            Join us today and Together let’s fight against plastic pollution
+                            
+                            Blue, for a healthier blue planet.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stats-activity relative w-full h-[100vh] mt-64 bg-center bg-cover shrink-0" style="background-image: url('images/activite.jpg');">
+            <div class="double-blackground absolute inset-0 bg-black opacity-60"></div>
+            <div class="stats-activity-true relative flex flex-row justify-around p-8 m-6 gap-10 z-1">
+                <div class="left-stat flex flex-col gap-10">
+                    <div class="title-stat text-5xl text-center font-extrabold text-white">Some Facts About Our <br>Activities</div>
+                    <div class="card-stats grid grid-cols-2 grid-rows-2 gap-10">
+                        <div class="stats-items items-center text-center shadow-md rounded-3xl bg-gray-600 opacity-75 px-5 py-12">
+                            <div class="num text-2xl text-yellow-700 font-bold">34%</div>
+                            <div class="txt text-lg text-white font-semibold">Beneficiaries Assisted</div>
+                        </div>
+                        <div class="stats-items items-center text-center shadow-md rounded-3xl bg-gray-600 opacity-75 px-5 py-12">
+                            <div class="num text-2xl text-yellow-700 font-bold">37</div>
+                            <div class="txt text-lg text-white font-semibold">Projects Completed</div>
+                        </div>
+                        <div class="stats-items items-center text-center shadow-md rounded-3xl bg-gray-600 opacity-75 px-5 py-12">
+                            <div class="num text-2xl text-yellow-700 font-bold">67</div>
+                            <div class="txt text-lg text-white font-semibold">Organizations and Partners</div>
+                        </div>
+                        <div class="stats-items items-center text-center shadow-md rounded-3xl bg-gray-600 opacity-75 px-5 py-12">
+                            <div class="num text-2xl text-yellow-700 font-bold">201</div>
+                            <div class="txt text-lg text-white font-semibold">Active Members</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-stat relative w-full max-w-md mx-auto overflow-hidden rounded-lg shadow-lg my-auto">
+                    <!-- image d'arrière plan -->
+                    <div class="relative">
+                        <img src="images/activite.jpg" alt="activity image" class="w-full h-auto object-cover">
+                    </div>
+                    <!-- superposition colorée -->
+                     <div class="absolute inset-0 bg-yellow-700 opacity-50"></div>
+                     <!-- button play -->
+                      <div class="absolute inset-0 flex items-center justify-center">
+                        <button class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:scalle-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-700" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6 4l14 8-14 8V4z"/>
+                            </svg>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section class="contactus flex flex-row justify-around py-24">
+            <div class="left-contactus flex flex-row justify-center items-center py-10 px-4">
+                <fieldset class="bg-white w-full max-w-4xl p-16 rounded-3xl shadow-lg">
+                    <!-- titre -->
+                    <div class="text-2xl font-bold text-gray-800 mb-4 text-start">LET'S GET IN TOUCH</div>
+                    <!-- <legend class="text-2xl font-bold text-gray-800">LET'S GET IN TOUCH</legend> -->
+                    <!-- ligne de séparation -->
+                    <hr class="border-t border-gray-300 mb-6 mx-auto">
+                    <!-- champs du formulaire -->
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <input type="text" name="name" placeholder="YOUR NAME...*" required class="w-full px-4 py-2 bg-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:outline-none placeholder-gray-400"/>
+                            <input type="email" name="email" placeholder="YOUR EMAIL..." required class="w-full px-4 py-2 bg-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:outline-none placeholder-gray-400"/>
+                            <input type="text" name="subject" placeholder="SUBJECT...*" required class="w-full px-4 py-2 bg-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:outline-none placeholder-gray-400"/>
+                        </div>
+                        <textarea name="message" placeholder="YOUR MESSAGE..." required class="w-full h-32 px-4 py-2 bg-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:outline-none placeholder-gray-400 resize-none"></textarea>
+                        <!-- bouton d'envoi -->
+                         <div class="text-start">
+                            <button type="submit" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg shadow-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-500">SEND MESSAGE NOW</button>
+                         </div>
+                    </form>
+                </fieldset>
+            </div>
+            <div class="right-contactus flex flex-col bg-blue-600 h-full w-64 p-12 m-6 rounded-2xl gap-4">
+                <div class="phone-items flex flex-col gap-2 text-start">
+                    <div class="text-lg text-white font-medium">Phone Number</div>
+                    <div class="text-xl text-white font-semibold">+2250778060961/<br>0709611341</div>
+                </div>
+                <hr class="border-t border-black-opacity-50 w-full my-4">
+                <div class="email-items flex flex-col gap-2">
+                    <div class="text-lg text-white font-medium">Email Adress</div>
+                    <div class="text-xl text-white font-semibold truncate">blue@bluemakers.net</div>
+                </div>
+                <hr class="border-t border-black-opacity-50 w-full my-4">
+                <div class="adress-items flex flex-col gap-2">
+                    <div class="text-lg text-white font-medium">Street Adress</div>
+                    <div class="text-xl text-white font-semibold">ABIDJAN, CÔTE D'IVOIRE</div>
+                </div>
+                <hr class="border-t border-black-opacity-50 w-full my-4">
+                <div class="website-items flex flex-col gap-2">
+                    <div class="text-lg text-white font-medium">Website URL</div>
+                    <div class="text-xl text-white font-semibold">bluemakers.net</div>
+                </div>
+            </div>
+        </section>
+        <section class="footer flex flex-col justify-center text-center py-16 gap-16">
+            <hr class="border-t border-black-opacity-50 w-full my-4">
+            <div class="text-white">
+                Copyright &copy;2024 <span class="text-[#0E6FBC] font-semibold text-shadow-2xl">BLUE</span>. All rights reserved.
+            </div>
+        </section>
+    </main>
+</body>
+</html>

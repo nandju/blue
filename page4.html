@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUE - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-poppins">
+    <header class="Dashboard flex flex-row justify-between px-20 py-4 bg-[#0E6FBC] w-full">
+        <!-- bg-gray-600/70 -->
+        <div class="Dashboard-left text-3xl font-semibold text-white">Dashboard</div>
+        <div class="Dashboard-right flex flex-row justify-around gap-4">
+            <input type="text" name="searchbar" placeholder="search..." class="rounded-2xl p-2 focus:outline-none focus:ring-4 focus:ring-gray-600/70">
+            <img src="images/Gojo123456789.jpeg" alt="profil-pictures" class="h-10 w-10 rounded-full">
+        </div>
+    </header>
+    <main class="bg-white h-screen">
+        <section class="dashboard-one flex flex-row justify-start">
+            <div class="dashboard-one-left bg-[#0E6FBC] w-16 flex flex-col gap-16 rounded-3xl mt-4 ml-4 p-4 fixed">
+                <img src="images/blue.png" alt="logo" class="h-16 w-16 rounded-3xl">
+                <div class="flex flex-col items-center gap-8">
+                    <!-- Menu -->
+                    <button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                
+                    <!-- Thème -->
+                    <button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v3m0 12v3m6-9h3M3 12h3m11.25-6.75l-2.25 2.25M8.25 17.25l-2.25-2.25M17.25 17.25l2.25-2.25M8.25 6.75L6 9M12 9a3 3 0 00-3 3 3 3 0 003 3 3 3 0 003-3 3 3 0 00-3-3z" />
+                        </svg>
+                    </button>
+                
+                    <!-- Notifications -->
+                    <button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14V9a6 6 0 00-12 0v5c0 .217-.034.432-.1.632L4 17h5m6 0v2a2 2 0 11-4 0v-2m6 0H9" />
+                        </svg>
+                    </button>
+                
+                    <!-- Paramètres -->
+                    <button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.06 13.5H4a2 2 0 010-4h2.06c.2-.74.54-1.42 1-2L5.34 5.94A2 2 0 017.34 3.94l1.44 1.45a4.9 4.9 0 012 0l1.44-1.45a2 2 0 112.83 2.83L14.5 7.5a4.9 4.9 0 010 2l1.45 1.44a2 2 0 01-2.83 2.83L12.94 13a4.9 4.9 0 01-2 0l-1.44 1.45a2 2 0 01-2.83-2.83l1.44-1.44c-.46-.57-.8-1.26-1-2z" />
+                        </svg>
+                    </button>
+                
+                    <!-- Déconnexion -->
+                    <button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6-4v1m-3-1h6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="dashboard-one-right ml-64 grid grid-cols-2 gap-4 p-4">
+                <!-- Card 1 -->
+                <div class="card-items relative h-64 border rounded-xl shadow-md">
+                  <img src="images/60540.jpg" alt="Admin Dashboard" class="h-full w-full object-cover rounded-xl">
+                  <div class="absolute inset-0 flex items-center justify-center bg-black/50 text-white text-lg font-semibold rounded-xl">
+                    Admin Dashboard
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card-items relative h-64 border rounded-xl shadow-md">
+                  <img src="images/2150690136.jpg" alt="Staff Management" class="h-full w-full object-cover rounded-xl">
+                  <div class="absolute inset-0 flex items-center justify-center bg-black/50 text-white text-lg font-semibold rounded-xl">
+                    Staff Management
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card-items relative h-64 border rounded-xl shadow-md">
+                  <img src="images/2150328517.jpg" alt="Event Management" class="h-full w-full object-cover rounded-xl">
+                  <div class="absolute inset-0 flex items-center justify-center bg-black/50 text-white text-lg font-semibold rounded-xl">
+                    Event Management
+                  </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card-items relative h-64 border rounded-xl shadow-md">
+                  <img src="images/40326.jpg" alt="Statistics" class="h-full w-full object-cover rounded-xl">
+                  <div class="absolute inset-0 flex items-center justify-center bg-black/50 text-white text-lg font-semibold rounded-xl">
+                    Statistics
+                  </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card-items relative h-64 border rounded-xl shadow-md">
+                  <img src="images/158729156_ecc9e03a-65f0-4775-930f-cba3403ec0b7.jpg" alt="Report" class="h-full w-full object-cover rounded-xl">
+                  <div class="absolute inset-0 flex items-center justify-center bg-black/50 text-white text-lg font-semibold rounded-xl">
+                    Report
+                  </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="card-items relative h-64 border rounded-xl shadow-md">
+                  <img src="images/2148708942.jpg" alt="Help & Support" class="h-full w-full object-cover rounded-xl">
+                  <div class="absolute inset-0 flex items-center justify-center bg-black/50 text-white text-lg font-semibold rounded-xl">
+                    Help & Support
+                  </div>
+                </div>
+            </div>              
+        </section>
+    </main>
+</body>
+</html>
